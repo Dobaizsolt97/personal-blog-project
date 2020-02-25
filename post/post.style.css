@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+.body {
+  margin: 0;
+}
+.post {
+  display: grid;
+  grid-template-columns: 3fr 12fr 5fr;
+  grid-gap: 10px 40px;
+}
+.post > * {
+  grid-column: 2/-2;
+}
+.post > .left {
+  grid-column: 1/-1;
+  text-align: center;
+}
