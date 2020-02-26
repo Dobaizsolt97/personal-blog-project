@@ -5,6 +5,7 @@ nav {
   align-items: center;
   min-height: 7vh;
 }
+
 .logo {
   color: var(--bkg-color);
   text-transform: uppercase;
@@ -13,6 +14,7 @@ nav {
   width: 30%;
   margin-left: 10%;
 }
+
 .nav-link {
   width: 70%;
   display: flex;
@@ -24,6 +26,7 @@ nav {
 .nav-links {
   display: flex;
 }
+
 .nav-links a {
   color: var(--bkg-color);
   text-decoration: none;
@@ -32,6 +35,7 @@ nav {
   font-size: 15px;
   margin: auto 10px;
 }
+
 .nav-links li {
   list-style: none;
 }
