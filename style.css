@@ -94,6 +94,10 @@ nav {
   right: 20px;
   bottom: 10px;
 }
+.card .blue-btn a {
+  color: var(--bkg-color);
+  text-decoration: none;
+}
 .card .blue-btn:hover {
   cursor: pointer;
   background-color: var(--red-color);
@@ -102,6 +106,7 @@ nav {
 .card .blue-btn:focus {
   outline: none;
 }
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
