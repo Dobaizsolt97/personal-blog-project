@@ -1,3 +1,5 @@
+@import "../styles/navbar.css";
+@import "../styles/footer.css";
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 * {
   box-sizing: border-box;
@@ -9,43 +11,8 @@
   --bkg-color: #f5f5f5;
   --red-color: #f15a5c;
 }
-
-nav {
-  background-color: var(--blue-color);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 7vh;
-}
-.logo {
-  color: var(--bkg-color);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 20px;
-  width: 30%;
-  margin-left: 10%;
-}
-.nav-link {
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 10%;
-}
-
-.nav-links {
-  display: flex;
-}
-.nav-links a {
-  color: var(--bkg-color);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 15px;
-  margin: auto 10px;
-}
-.nav-links li {
-  list-style: none;
+.social-media img {
+  width: 30px;
 }
 .post {
   display: grid;
@@ -109,6 +76,10 @@ p {
   justify-content: center;
   align-items: center;
 }
+.middle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .middle-img {
   height: 300px;
 
@@ -154,18 +125,7 @@ p {
   border: none;
 }
 footer {
-  height: 10vh;
-  background-color: var(--blue-color);
-
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-footer h5,
-h6 {
-  margin: 0;
+  margin-top: 0;
 }
 @media screen and (max-width: 900px) {
   .post > * {
