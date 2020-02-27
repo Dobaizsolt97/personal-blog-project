@@ -24,6 +24,7 @@ body {
 
   margin: 10vh;
 }
+
 .card {
   background-color: white;
   width: 400px;
@@ -32,21 +33,26 @@ body {
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
+
 .img-container {
   text-align: center;
   height: 150px;
 }
+
 .card img {
   height: 100%;
 }
+
 .card .category {
   color: var(--blue-color);
   font-weight: bold;
   margin: 0;
 }
+
 .card .blue-btn {
   background-color: var(--blue-color);
   border: 0;
@@ -58,15 +64,18 @@ body {
   right: 20px;
   bottom: 10px;
 }
+
 .card .blue-btn a {
   color: var(--bkg-color);
   text-decoration: none;
 }
+
 .card .blue-btn:hover {
   cursor: pointer;
   background-color: var(--red-color);
   color: white;
 }
+
 .card .blue-btn:focus {
   outline: none;
 }
@@ -85,12 +94,17 @@ body {
   border-radius: 20px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
 }
+
 form input {
   width: 40%;
   padding: 10px;
   margin-top: 10px;
   border: 2px solid #d3d3d3;
 }
+form label {
+  margin-top: 10px;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -106,23 +120,28 @@ form input {
   border-radius: 20px;
   color: white;
 }
+
 .form-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 form input {
   width: 60%;
 }
+
 @media only screen and (max-width: 600px) {
   .card {
     width: 300px;
   }
+
   .logo {
     font-size: 10px;
     letter-spacing: 1px;
   }
+
   .nav-links li a {
     font-size: 10px;
   }
@@ -130,29 +149,36 @@ form input {
   nav ul {
     margin-right: 20px;
   }
+
   .cards-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
   }
 }
+
 @media only screen and (max-width: 400px) {
   .card {
     width: 280px;
   }
+
   .logo {
     font-size: 10px;
     letter-spacing: 1px;
   }
+
   .nav-links li a {
     font-size: 10px;
   }
+
   nav ul {
     margin-right: 20px;
   }
+
   .cards-container {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 20px;
   }
+
   .title {
     font-size: 20px;
   }
