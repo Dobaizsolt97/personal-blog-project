@@ -25,6 +25,13 @@ body {
   margin: 10vh;
 }
 
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
 .card {
   background-color: white;
   width: 400px;
@@ -38,9 +45,8 @@ body {
   transform: scale(1.05);
 }
 
-.img-container {
-  text-align: center;
-  height: 150px;
+.card p {
+  padding-bottom: 20px;
 }
 
 .card img {
@@ -80,6 +86,11 @@ body {
   outline: none;
 }
 
+.img-container {
+  text-align: center;
+  height: 150px;
+}
+
 .form-section {
   display: flex;
   flex-direction: column;
@@ -101,24 +112,20 @@ form input {
   margin-top: 10px;
   border: 2px solid #d3d3d3;
 }
+
 form label {
   margin-top: 10px;
 }
 
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 20px;
-  justify-items: center;
-}
-
 #submit {
   margin-top: 20px;
-  background-color: var(--red-color);
+  background-color: #ba2027;
   padding: 10px 40px;
   border: none;
   border-radius: 20px;
-  color: white;
+  color: var(--bkg-color);
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .form-info {
@@ -136,20 +143,16 @@ form input {
   .card {
     width: 300px;
   }
-
   .logo {
     font-size: 10px;
     letter-spacing: 1px;
   }
-
   .nav-links li a {
     font-size: 10px;
   }
-
   nav ul {
     margin-right: 20px;
   }
-
   .cards-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
@@ -160,25 +163,20 @@ form input {
   .card {
     width: 280px;
   }
-
   .logo {
     font-size: 10px;
     letter-spacing: 1px;
   }
-
   .nav-links li a {
     font-size: 10px;
   }
-
   nav ul {
     margin-right: 20px;
   }
-
   .cards-container {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 20px;
   }
-
   .title {
     font-size: 20px;
   }
